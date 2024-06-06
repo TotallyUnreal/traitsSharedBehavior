@@ -28,4 +28,12 @@ impl Summary for Tweet {
     }
 }
 
-fn main() {}
+fn main() {
+    let tweet = Tweet {
+        username: String::from("User"),
+        content: String::from("of course, as you already know."),
+        reply: false,
+        retweet: false,
+    };
+    println!("1 new X post: {}", tweet.summarize());
+}
