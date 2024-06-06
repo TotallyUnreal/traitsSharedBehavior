@@ -38,4 +38,13 @@ fn main() {
         retweet: false,
     };
     println!("1 new X post: {}", tweet.summarize());
+
+    let article = NewsArticle {
+        headline: String::from("Man finds cure for all!"),
+        location: String::from("Pittsburgh, PA, USA"),
+        author: String::from("Iceburgh"),
+        content: String::from("Turns out the man is a fruad!"),
+    };
+
+    println!("New article available! {}", article.summarize());
 }
